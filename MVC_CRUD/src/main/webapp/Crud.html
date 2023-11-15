@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUD Application</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+input, select {
+	margin-bottom: 15px;
+	padding: 8px;
+	width: 200px;
+}
+
+button {
+	padding: 10px;
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+	<h1>Student Details</h1>
+	<form action="StudentServlet" method="post">
+		<label for="name">Student:</label> <input type="text" id="Name"
+			name="name"> <label for="subject">Course:</label> <input
+			type="text" id="subject" name="subject"> <label for="action">Action:</label>
+		<select id="action" name="action">
+			<option value="create">Create</option>
+			<option value="read">Read</option>
+			
+		</select>
+		<button>Submit</button>
+	</form>
+
+
+</body>
+</html>
